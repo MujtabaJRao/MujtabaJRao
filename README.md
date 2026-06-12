@@ -56,8 +56,8 @@ Active on:
 - **HackerOne / Bugcrowd** — transitioning to real targets
 - Recon stack: `subfinder` `amass` `httpx` `ffuf` `nuclei` `gau` `shodan`
 
-Vuln classes: `SQLi` `XSS` `SSRF` `IDOR` `CSRF` `XXE` `RCE` `OAuth flaws` `JWT attacks`  
-Certs on the radar: `OSCP` · `BSCP` · `eWPT`
+Vuln classes: `SQLi` `XSS`  `IDOR` '(Expanding)' 
+
 
 ---
 
