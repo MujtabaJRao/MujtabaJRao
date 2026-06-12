@@ -9,9 +9,9 @@
 ╚═╝     ╚═╝ ╚═════╝  ╚════╝    ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝
 ```
 
-###  `Penetration Tester` · `RTL/FPGA Engineer` · `Arch Linux`
+### `Web Penetration Tester` · `RTL/FPGA Engineer` · `Arch Linux`
 
-*where register-transfer logic meets exploit development*
+*breaking web apps with the intuition of someone who builds processors*
 
 [![HackerOne](https://img.shields.io/badge/HackerOne-grey?style=flat-square&logo=hackerone)](https://hackerone.com)
 [![Bugcrowd](https://img.shields.io/badge/Bugcrowd-grey?style=flat-square&logo=bugcrowd)](https://bugcrowd.com)
@@ -24,47 +24,27 @@
 
 ## The Angle
 
-Most people come at security from software. I come at it from silicon.
+I do web pentesting and bug bounty as my main thing. SQLi, SSRF, OAuth flaws, JWT attacks, chained exploits — that's the daily work.
 
-Designing RTL — where you control every clock edge, every signal propagation path, every pipeline stage — gives you a level of systems intuition that pure software engineers don't have. That maps directly onto a class of vulnerabilities most people skip: timing oracles, cache-based side channels, speculative execution leaks, hardware-accelerated fuzzing.
+But I also design hardware. RTL, FPGAs, custom processor architectures. And that background quietly makes me a better attacker than someone who came up purely through web security.
 
-That's the edge I'm building.
+When you understand how a CPU actually executes instructions — cache lines, pipeline stages, memory hierarchies — you see a class of attack surface most web hackers don't think about.
 
 ```
 HARDWARE KNOWLEDGE                    SECURITY APPLICATION
 ─────────────────────────────────────────────────────────
-Clock domain crossing          →      Timing attack primitives
 Cache hierarchy design         →      Flush+Reload, Prime+Probe
+Clock domain / timing          →      Timing oracle attacks
 Pipeline stage analysis        →      Spectre-style gadget hunting
-Signal integrity / EMI         →      Power analysis (SPA/DPA)
 RTL state machines             →      Protocol-level exploit logic
+Signal integrity / EMI         →      Power analysis (SPA/DPA)
 ```
-
----
-
-## Hardware
-
-**Focus:** FPGA/RTL design, custom processor architecture, low-level systems
-
-![Verilog](https://img.shields.io/badge/Verilog-grey?style=flat-square)
-![SystemVerilog](https://img.shields.io/badge/SystemVerilog-grey?style=flat-square)
-![C](https://img.shields.io/badge/C-grey?style=flat-square&logo=c)
-![C++](https://img.shields.io/badge/C++-grey?style=flat-square&logo=cplusplus)
-![RISC-V](https://img.shields.io/badge/RISC--V-grey?style=flat-square)
-
-**IBN-E-SINA — Custom 16-bit Stack Processor** ← main project right now  
-Zero-address architecture. Hybrid stack-register design with TOS/NOS buffers.  
-Single-cycle execution. High code density. Built from scratch in Verilog.  
-→ [CS-221-Computer-Organization-Design-CEP-IBN-E-SINA-Architecture](https://github.com/MujtabaJRao/CS-221-Computer-Organization-Design-CEP-IBN-E-SINA-Architecture)
-
-Currently studying:  
-`Cache hierarchies` · `RISC-V single-cycle datapath` · `IEEE 754` · `CPI analysis`
 
 ---
 
 ## Pentesting
 
-**Focus:** Web application security, bug bounty, working toward elite on PortSwigger
+**Focus:** Web application security · Bug bounty · Working toward elite on PortSwigger
 
 ![Burp Suite](https://img.shields.io/badge/Burp_Suite-FF6633?style=flat-square)
 ![Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=arch-linux&logoColor=white)
@@ -81,16 +61,36 @@ Certs on the radar: `OSCP` · `BSCP` · `eWPT`
 
 ---
 
+## Hardware
+
+**Focus:** FPGA/RTL design · Custom processor architecture · Low-level systems
+
+![Verilog](https://img.shields.io/badge/Verilog-grey?style=flat-square)
+![SystemVerilog](https://img.shields.io/badge/SystemVerilog-grey?style=flat-square)
+![C](https://img.shields.io/badge/C-grey?style=flat-square&logo=c)
+![C++](https://img.shields.io/badge/C++-grey?style=flat-square&logo=cplusplus)
+![RISC-V](https://img.shields.io/badge/RISC--V-grey?style=flat-square)
+
+**IBN-E-SINA — Custom 16-bit Stack Processor**  
+Zero-address architecture. Hybrid stack-register design with TOS/NOS buffers.  
+Single-cycle execution. High code density. Built from scratch in Verilog.  
+→ [CS-221-Computer-Organization-Design-CEP-IBN-E-SINA-Architecture](https://github.com/MujtabaJRao/CS-221-Computer-Organization-Design-CEP-IBN-E-SINA-Architecture)
+
+Currently studying:  
+`Cache hierarchies` · `RISC-V single-cycle datapath` · `IEEE 754` · `CPI analysis`
+
+---
+
 ## Stack
 
 ```
 OS          Arch Linux (btw)
 Editor      Neovim
+Web Sec     Burp Suite · ffuf · nuclei · sqlmap
+Recon       subfinder · amass · httpx · gau · Shodan
 HDL         Verilog / SystemVerilog
 Languages   C · C++ · Python · JavaScript
 Sim         GTKWave · Icarus Verilog
-Web Sec     Burp Suite · ffuf · nuclei · sqlmap
-Recon       subfinder · amass · httpx · gau · Shodan
 ```
 
 ---
@@ -109,7 +109,7 @@ Recon       subfinder · amass · httpx · gau · Shodan
 
 <div align="center">
 
-`Karachi, PK` · Open to internships & research collab  
-*If you're working on hardware security, side-channels, or low-level exploit dev — let's talk.*
+`Karachi, PK` · Open to internships & bug bounty collab  
+*If you're working on web security, hardware pentesting, or side-channel research — let's talk.*
 
 </div>
