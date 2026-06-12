@@ -56,7 +56,7 @@ Active on:
 - **HackerOne / Bugcrowd** — transitioning to real targets
 - Recon stack: `subfinder` `amass` `httpx` `ffuf` `nuclei` `gau` `shodan`
 
-Vuln classes: `SQLi` `XSS`  `IDOR` '(Expanding)' 
+Vuln classes: `SQLi` `XSS`  `IDOR` 
 
 
 ---
